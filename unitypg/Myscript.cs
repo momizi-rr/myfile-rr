@@ -15,11 +15,11 @@ public class Myscript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Quaternion k = Quaternion.Euler(num, num, num);
+        Quaternion k = Quaternion.Euler(num, num, num); //回転
         transform.rotation = k;
         num++;
         
-        if (Input.GetKey("space"))
+        if (Input.GetKey("space")) //スペースでジャンプ
         {
             moveDirection.y = 10;
         }
